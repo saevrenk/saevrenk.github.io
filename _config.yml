@@ -1,3 +1,5 @@
+name: shules website
 theme: jekyll-theme-minimal
 title: Shule's homepage
+markdown: kramdown
 
