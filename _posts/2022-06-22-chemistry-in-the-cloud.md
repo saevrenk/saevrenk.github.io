@@ -14,6 +14,7 @@ condacolab.install()
 !mamba install -c conda-forge rdkit
 !mamba install -c conda-forge xtb
 !pip install py3Dmol
+!pip install rdkit-pypi
 ```
 An example geometry optimization for the following PROTAC is shown in the notebook:
 
