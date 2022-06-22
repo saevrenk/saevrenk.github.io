@@ -18,11 +18,11 @@ condacolab.install()
 ```
 An example geometry optimization for the following PROTAC is shown in the notebook:
 
-<pre><code class="python">
+```python
 protac_smi = 'C[C@@H]1CC2=C(NC3=CC=CC=C23)[C@H](N1CC(C)(C)F)C1=C(F)C=C(OCCOCCOCCOCC(=O)N[C@H](C(=O)N2C[C@H](O)C[C@H]2C(=O)NCC2=CC=C(C=C2)C2=C(C)N=CS2)C(C)(C)C)C=C1F'
 protac = Chem.MolFromSmiles(protac_smi)
 protac
-</pre></code>
+```
 
 ![protac 2d](/assets/protac_2d.png)
 
