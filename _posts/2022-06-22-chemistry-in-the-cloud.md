@@ -5,17 +5,19 @@ Computational chemistry has many different tools for different goals. However, o
 Standard quantum chemistry calculations take usually too long. Due to the usage limits for free jobs in Colab (12 hours runtime and 16GB memory) high accuracy calculation might be off limits. Semiempirical methods provide a trade-off between the accuracy and computational expense.  Recently, I posted a [Jupyter notebook](https://github.com/saevrenk/qc/blob/main/xtb.ipynb) to show how to use the [xTB semiempirical code](https://xtb-docs.readthedocs.io/en/latest/contents.html) from the Grimme group in the cloud for free. This notebook was inspired by Prof. Jensen's presentation at [here](https://youtu.be/KEIpJ50Jc0w). 
 
 You can use condacolab to setup rdkit and xtb (it takes sometime to install the packages). 
-```python
-%%capture
-!pip install -q condacolab
-import condacolab
-condacolab.install()
 
-!mamba install -c conda-forge rdkit
-!mamba install -c conda-forge xtb
-!pip install py3Dmol
-!pip install rdkit-pypi
-```
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333333">%%</span>capture
+<span style="color: #FF0000; background-color: #FFAAAA">!</span>pip install <span style="color: #333333">-</span>q condacolab
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">condacolab</span>
+condacolab<span style="color: #333333">.</span>install()
+
+<span style="color: #FF0000; background-color: #FFAAAA">!</span>mamba install <span style="color: #333333">-</span>c conda<span style="color: #333333">-</span>forge rdkit
+<span style="color: #FF0000; background-color: #FFAAAA">!</span>mamba install <span style="color: #333333">-</span>c conda<span style="color: #333333">-</span>forge xtb
+<span style="color: #FF0000; background-color: #FFAAAA">!</span>pip install py3Dmol
+<span style="color: #FF0000; background-color: #FFAAAA">!</span>pip install rdkit<span style="color: #333333">-</span>pypi
+</pre></div>
+
+
 An example geometry optimization for the following PROTAC is shown in the notebook:
 
 ```python
