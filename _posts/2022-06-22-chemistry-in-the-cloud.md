@@ -24,10 +24,6 @@ protac = Chem.MolFromSmiles(protac_smi)
 protac
 ```
 
-<pre><code class="language-Python">
-from numpy import *
-</pre></code>
-
 ![protac 2d](/assets/protac_2d.png)
 
 To do the optimization we need an initial 3D geometry. In the notebook, we obtained this from rdkit by MMFF force field optimization. The molecular mechanic geometry from rdkit is shown on the left. Using the rdkit geometry as the initial structure, we optimized the geometry (tight) with xTB; this is shown on the right.
