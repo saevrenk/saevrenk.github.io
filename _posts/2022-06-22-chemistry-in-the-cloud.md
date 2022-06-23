@@ -30,4 +30,4 @@ We need an initial 3D geometry for the geometry optimization with xTB. Below, th
 
 ![protac 3d](/assets/protac_3d.png)
 
-Note: Unfortunately 3D geometries do not display properly in the jupyter notebook. The geometries can be seen in the original colab notebook by clicking the "Open in Colab" link in the notebook.
+Note: Unfortunately 3D geometries do not display properly in the jupyter notebook. The geometries can be seen in the original colab notebook by clicking the "Open in Colab" link.
