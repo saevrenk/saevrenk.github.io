@@ -1,8 +1,8 @@
-Computational chemistry has many different tools for different goals. However, one common feature of all the comp chem software is the complexity. This is because the end product results from many years of work by many researchers. Luckily, you do not have to write your own from scratch, there are plenty of [open-source codes](https://opensourcemolecularmodeling.github.io) available now. Combine that with free compute resources such as google colab, you can run your own comp chem exercise in the cloud for free, in no time at all.
+Computational chemistry has many different tools for different goals. However, one common feature of all of them is complexity since the end product results from many years of work by numerous researchers. Luckily, you do not have to write your own from scratch; plenty of [open-source codes](https://opensourcemolecularmodeling.github.io)are available now. Combine that with free computing resources such as google Colab; you can run your computational chemistry exercise in the cloud for free in no time.
 
-Standard quantum chemistry calculations usually take too long. Also, due to the usage limits for free jobs in Colab (12 hours runtime and 16GB memory), a high accuracy calculation might be off limits. Semiempirical methods provide a trade-off between the accuracy and computational expense.  Recently, I posted a [Jupyter notebook](https://github.com/saevrenk/qc/blob/main/xtb.ipynb) to show how to use the [xTB semiempirical code](https://xtb-docs.readthedocs.io/en/latest/contents.html) from the Grimme group in the cloud for free. This notebook was inspired by Prof. Jensen's presentation at [here](https://youtu.be/KEIpJ50Jc0w). 
+Standard quantum chemistry calculations usually take too long. Also, using high-accuracy quantum chemistry might be off-limits due to the usage restrictions for free jobs in Colab (12 hours runtime and 16GB memory). Luckily, semiempirical methods provide a trade-off between accuracy and computational expense. Recently, I posted a [Jupyter notebook](https://github.com/saevrenk/qc/blob/main/xtb.ipynb) to show how to use the [xTB semiempirical code](https://xtb-docs.readthedocs.io/en/latest/contents.html) from the Grimme group in the cloud for free. This notebook was inspired by Prof. Jensen's presentation [here](https://youtu.be/KEIpJ50Jc0w). 
 
-You can use condacolab to setup rdkit and xtb (it takes a few minutes to install the packages). 
+You can use condacolab to set up Rdkit and xtb (installing the packages takes a few minutes). Once that is done, starting with SMILES strings, you can calculate 3d geometries and visualize them!
 
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333333">%%</span>capture
 <span style="color: #FF0000; background-color: #FFAAAA">!</span>pip install <span style="color: #333333">-</span>q condacolab
@@ -27,5 +27,7 @@ protac
 We need an initial 3D geometry for the geometry optimization with xTB. Below, the initial geometry from rdkit is shown on the left; the optimized geometry with xTB is shown on the right. 
 
 ![protac 3d](/assets/protac_3d.png)
+
+Enjoy!
 
 Note: Unfortunately 3D geometries do not display properly in the jupyter notebook. The geometries can be seen in the original colab notebook by clicking the "Open in Colab" link.
