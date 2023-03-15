@@ -1,4 +1,4 @@
-Suggestions to improve the fragments code:
+Suggestions to improve the [fragments](https://github.com/saevrenk/fragments.git) code:
 
 1. Add more comments to the code to explain what each part does. 
 
