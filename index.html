@@ -17,10 +17,17 @@ title: Hello
 			href="https://pubs.acs.org/toc/jpcafh/123/36">cover</a>
 		of ACS magazine JPCA.</p>
 
-	<p> The project involved creation of a dataset (a),
+	<p> The project involved creation of a dataset using a SMILES and SMARTS
+		based combinatorial molecule generation(a),
 		calculation of the reorganization energy with DFT methods (b),
-		and prediction of the reorganization energy (c). The reorganization energy
+		and prediction of the reorganization energy with Ridge Regression, Kernel Ridge Regression and
+		Deep Neural Networkds (c). The reorganization energy
 		is depicted as lambda represents the target reorganization energy value.</p>
+
+	<p>We found that DNNs outperform the other methods and can predict the RE with a
+		coefficient of determination of 0.92 and root-mean-square error of ∼12 meV.
+		This study shows that the REs of organic semiconductor molecules can be predicted
+		from the molecular structures with high accuracy.</p>
 </div>
 
 <div class="blurb">
@@ -86,6 +93,7 @@ title: Hello
 	<p>Here is a recent <a href="https://github.com/saevrenk/molecular_scs">notebook</a>
 		where I explored clustering and
 		interactive plotting with molplotly using this dataset.</p>
-	<video src="https://user-images.githubusercontent.com/105816821/229763963-0742d91a-6897-4399-a04f-2e89080a1b4e.mov" controls="controls" style="max-width: 730px;">
-</video>
+	<video src="https://user-images.githubusercontent.com/105816821/229763963-0742d91a-6897-4399-a04f-2e89080a1b4e.mov"
+		controls="controls" style="max-width: 730px;">
+	</video>
 </div>
